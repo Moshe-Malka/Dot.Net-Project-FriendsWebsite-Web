@@ -1,0 +1,121 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Final.Site1" %>
+
+<!DOCTYPE html>
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Friend Bring Friend Website</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 455px;
+        }
+        .auto-style2 {
+            height: 13px;
+            left: 20px;
+            top: 588px;
+            width: 779px;
+            text-align: left;
+        }
+        .auto-style3 {
+            height: 724px;
+        }
+        .auto-style8 {
+            width: 256px;
+            height: 22px;
+            position: absolute;
+            top: 216px;
+            left: 5px;
+            z-index: 1;
+        }
+        .auto-style9 {
+            height: 32px;
+        }
+        .auto-style10 {
+            left: 13px;
+            top: -20px;
+            height: 440px;
+            width: 232px;
+        }
+        .auto-style13 {
+            text-align: left;
+            width: 858px;
+            font-size: small;
+        }
+        .auto-style15 {
+            text-decoration: underline;
+        }
+        .auto-style16 {
+            text-align: left;
+        }
+        .auto-style17 {
+            height: 429px;
+        }
+        .auto-style18 {
+            height: 32px;
+            text-align: left;
+            width: 1500px;
+        }
+        </style>
+</head>
+<body style="z-index: 1; left: 15px; top: 7px; position: absolute; height: 720px; width: 843px">
+    <form id="form1" runat="server" class="auto-style3">
+        <div id="topContent" class="auto-style13" style="background-image: url('/image/home_2.jpg'); background-position: center" > 
+            
+            <p class="auto-style18">friend website</p>
+        </div>
+
+
+
+        <div id="mainContent" class="auto-style17">
+            <asp:ContentPlaceHolder ID="mainContent1" runat="server" >
+                <p class="auto-style1">
+                    <br />
+                </p>
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div id="leftContent" class="auto-style10">
+            <h3>
+                &nbsp;</h3>
+            <p class="auto-style9"></p>
+                
+                  <div>
+                <ul class="nav navbar-nav">
+                      <li>
+                          <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True" ForeColor="Black" NavigateUrl="~/MainPage.aspx">home</asp:HyperLink>
+                      </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink2" runat="server" CssClass="auto-style15" Font-Bold="True" ForeColor="Black" NavigateUrl="~/AbuteUs.aspx">Contact</asp:HyperLink>
+                      </li>
+                    <li><asp:HyperLink ID="HyperLink3" runat="server" CssClass="auto-style15" Font-Bold="True" ForeColor="Black">abute</asp:HyperLink></li>
+                    </ul>
+            </div>
+               
+
+
+                  
+               
+            
+            <h3 class="auto-style8">&nbsp;</h3>
+        </div>
+
+       
+
+        <br />
+        <br />
+         <div id="footerContent" class="auto-style2" style="color: #000000">
+            &nbsp;<br />
+              <div class="auto-style16" style="color: #000000">
+            &copy; <%: DateTime.Now.Year %> - My ASP.NET Application&nbsp;
+        </div>
+        </div>
+    </form>
+       
+        </body>
+</html>
+

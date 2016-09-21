@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2BEC6AC4-347F-4FC7-8F82-950E05285C9D}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Final</RootNamespace>
+    <AssemblyName>Final</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AbuteUs.aspx" />
+    <Content Include="AllDataOfCendidate.aspx" />
+    <Content Include="AllJobs.aspx" />
+    <Content Include="CendidateForJob.aspx" />
+    <Content Include="CendidateRegister.aspx" />
+    <Content Include="EmployersLoggedin.aspx" />
+    <Content Include="EmployersRegister.aspx" />
+    <Content Include="image\1.jpg" />
+    <Content Include="image\businessman_tie-512.png" />
+    <Content Include="image\butgr.jpg" />
+    <Content Include="image\choosing-candidate_23-2147503010.jpg" />
+    <Content Include="image\contect.jpg" />
+    <Content Include="image\Free-Abstract-Wallpapers-HD.jpg" />
+    <Content Include="image\home gra.jpg" />
+    <Content Include="image\homenew.jpg" />
+    <Content Include="image\home_1.jpg" />
+    <Content Include="image\home_2.jpg" />
+    <Content Include="image\jobb.jpg" />
+    <Content Include="image\language_heb.jpg" />
+    <Content Include="image\loginblack.jpg" />
+    <Content Include="image\logingray.png" />
+    <Content Include="image\new.jpg" />
+    <Content Include="image\newjob.jpg" />
+    <Content Include="image\pattern.jpg" />
+    <Content Include="image\priv.jpg" />
+    <Content Include="image\regg.png" />
+    <Content Include="image\save.png" />
+    <Content Include="image\saveandclose.png" />
+    <Content Include="image\tem.jpg" />
+    <Content Include="image\UP.jpg" />
+    <Content Include="LoggedinCendidate.aspx" />
+    <Content Include="NewJob.aspx" />
+    <Content Include="NewRecomend.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="SerchCendidate.aspx" />
+    <Content Include="SerchCendidateCity.aspx" />
+    <Content Include="SerchCendidateEducation.aspx" />
+    <Content Include="SerchCendidateField.aspx" />
+    <Content Include="SerchRecommendtion.aspx" />
+    <Content Include="SerchYourJob.aspx" />
+    <Content Include="Site1.Master" />
+    <Content Include="UpdateData.aspx" />
+    <Content Include="WorkExperiance.aspx" />
+    <Content Include="YourRecommend.aspx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="image\4444444444444444444.jpg" />
+    <Content Include="image\images.jpg" />
+    <Content Include="image\images.png" />
+    <Content Include="image\job.jpg" />
+    <Content Include="image\login-button-png-md.png" />
+    <Content Include="image\login.jpg" />
+    <Content Include="image\recored.jpg" />
+    <Content Include="image\reg.jpg" />
+    <Content Include="image\uplo.jpg" />
+    <Content Include="Login.aspx" />
+    <Content Include="MainPage.aspx" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="UpdateJob.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbuteUs.aspx.cs">
+      <DependentUpon>AbuteUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AbuteUs.aspx.designer.cs">
+      <DependentUpon>AbuteUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllDataOfCendidate.aspx.cs">
+      <DependentUpon>AllDataOfCendidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllDataOfCendidate.aspx.designer.cs">
+      <DependentUpon>AllDataOfCendidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AllJobs.aspx.cs">
+      <DependentUpon>AllJobs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AllJobs.aspx.designer.cs">
+      <DependentUpon>AllJobs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CendidateForJob.aspx.cs">
+      <DependentUpon>CendidateForJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CendidateForJob.aspx.designer.cs">
+      <DependentUpon>CendidateForJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CendidateRegister.aspx.cs">
+      <DependentUpon>CendidateRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CendidateRegister.aspx.designer.cs">
+      <DependentUpon>CendidateRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployersLoggedin.aspx.cs">
+      <DependentUpon>EmployersLoggedin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployersLoggedin.aspx.designer.cs">
+      <DependentUpon>EmployersLoggedin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EmployersRegister.aspx.cs">
+      <DependentUpon>EmployersRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EmployersRegister.aspx.designer.cs">
+      <DependentUpon>EmployersRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LoggedinCendidate.aspx.cs">
+      <DependentUpon>LoggedinCendidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LoggedinCendidate.aspx.designer.cs">
+      <DependentUpon>LoggedinCendidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.aspx.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainPage.aspx.designer.cs">
+      <DependentUpon>MainPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewJob.aspx.cs">
+      <DependentUpon>NewJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewJob.aspx.designer.cs">
+      <DependentUpon>NewJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NewRecomend.aspx.cs">
+      <DependentUpon>NewRecomend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewRecomend.aspx.designer.cs">
+      <DependentUpon>NewRecomend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SerchCendidate.aspx.cs">
+      <DependentUpon>SerchCendidate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchCendidate.aspx.designer.cs">
+      <DependentUpon>SerchCendidate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerchCendidateCity.aspx.cs">
+      <DependentUpon>SerchCendidateCity.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchCendidateCity.aspx.designer.cs">
+      <DependentUpon>SerchCendidateCity.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerchCendidateEducation.aspx.cs">
+      <DependentUpon>SerchCendidateEducation.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchCendidateEducation.aspx.designer.cs">
+      <DependentUpon>SerchCendidateEducation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerchCendidateField.aspx.cs">
+      <DependentUpon>SerchCendidateField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchCendidateField.aspx.designer.cs">
+      <DependentUpon>SerchCendidateField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerchRecommendtion.aspx.cs">
+      <DependentUpon>SerchRecommendtion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchRecommendtion.aspx.designer.cs">
+      <DependentUpon>SerchRecommendtion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SerchYourJob.aspx.cs">
+      <DependentUpon>SerchYourJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SerchYourJob.aspx.designer.cs">
+      <DependentUpon>SerchYourJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateData.aspx.cs">
+      <DependentUpon>UpdateData.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateData.aspx.designer.cs">
+      <DependentUpon>UpdateData.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateJob.aspx.cs">
+      <DependentUpon>UpdateJob.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateJob.aspx.designer.cs">
+      <DependentUpon>UpdateJob.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WorkExperiance.aspx.cs">
+      <DependentUpon>WorkExperiance.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkExperiance.aspx.designer.cs">
+      <DependentUpon>WorkExperiance.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YourRecommend.aspx.cs">
+      <DependentUpon>YourRecommend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YourRecommend.aspx.designer.cs">
+      <DependentUpon>YourRecommend.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>64202</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:64202/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

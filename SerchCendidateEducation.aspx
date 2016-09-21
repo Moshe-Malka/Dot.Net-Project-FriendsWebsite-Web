@@ -1,0 +1,70 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="SerchCendidateEducation.aspx.cs" Inherits="Final.SerchCendidateEducation" EnableEventValidation="false" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style15 {
+            width: 100%;
+        }
+        .auto-style17 {
+            text-align: center;
+        }
+        .auto-style19 {
+            width: 958px;
+        }
+        .auto-style20 {
+            text-align: center;
+            height: 21px;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="mainContent1" runat="server">
+    <h4 class="auto-style20">
+        serch by education<br />
+    </h4>
+    <table class="auto-style15">
+        <tr>
+            <td class="auto-style19">
+                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource3" DataTextField="DegreeName" DataValueField="DegreeName" AutoPostBack="True">
+                </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [DegreeName] FROM [Degree]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Degree]"></asp:SqlDataSource>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td class="auto-style19">
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="#CCCCCC" BorderColor="#999999" BorderStyle="Solid" BorderWidth="3px" CellPadding="4" CellSpacing="2" DataKeyNames="Email" DataSourceID="SqlDataSource2" ForeColor="Black">
+                    <Columns>
+                        <asp:BoundField DataField="FirstName" HeaderText="FirstName" SortExpression="FirstName" />
+                        <asp:BoundField DataField="LastName" HeaderText="LastName" SortExpression="LastName" />
+                        <asp:BoundField DataField="Email" HeaderText="Email" ReadOnly="True" SortExpression="Email" />
+                        <asp:BoundField DataField="PhoneNumber" HeaderText="PhoneNumber" SortExpression="PhoneNumber" />
+                        <asp:BoundField DataField="City" HeaderText="City" SortExpression="City" />
+                        <asp:CheckBoxField DataField="isEmployed" HeaderText="isEmployed" SortExpression="isEmployed" />
+                        <asp:BoundField DataField="CurrentWorkPlace" HeaderText="CurrentWorkPlace" SortExpression="CurrentWorkPlace" />
+                        <asp:BoundField DataField="CurrentPosition" HeaderText="CurrentPosition" SortExpression="CurrentPosition" />
+                        <asp:BoundField DataField="Education" HeaderText="Education" SortExpression="Education" />
+                        <asp:BoundField DataField="College" HeaderText="College" SortExpression="College" />
+                        <asp:BoundField DataField="Graduation" HeaderText="Graduation" SortExpression="Graduation" />
+                    </Columns>
+                    <FooterStyle BackColor="#CCCCCC" />
+                    <HeaderStyle BackColor="Black" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="#CCCCCC" ForeColor="Black" HorizontalAlign="Left" />
+                    <RowStyle BackColor="White" />
+                    <SelectedRowStyle BackColor="#000099" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                    <SortedAscendingHeaderStyle BackColor="#808080" />
+                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                    <SortedDescendingHeaderStyle BackColor="#383838" />
+                </asp:GridView>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [FirstName], [LastName], [Email], [PhoneNumber], [City], [isEmployed], [CurrentWorkPlace], [CurrentPosition], [Education], [College], [Graduation] FROM [Users] WHERE ([Education] = @Education)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DropDownList1" Name="Education" PropertyName="SelectedValue" Type="String" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
+                <br />
+                <asp:ImageButton ID="backbuton" runat="server" ImageUrl="~/image/language_heb.jpg" OnClick="backbuton_Click" />
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</asp:Content>
